@@ -20,34 +20,31 @@
 </div>
 
 <div class="container">
-    <!-- Row for letters -->
+    <!-- Letters Row -->
     <div class="row">
         <div class="col-sm-2">T</div>
         <div class="col-sm-2">H</div>
         <div class="col-sm-2">O</div>
+        <div class="col-sm-2">T</div>
         <div class="col-sm-2">A</div>
         <div class="col-sm-2">K</div>
-        <div class="col-sm-2">U</div>
     </div>
     
-    <!-- Row for plant names -->
+    <!-- Plant Names Row -->
     <div class="row">
         <div class="col-md">Tulip</div>
         <div class="col-md">Hibiscus</div>
         <div class="col-md">Oak</div>
+        <div class="col-md">Tomato</div>
         <div class="col-md">Azalea</div>
         <div class="col-md">Kale</div>
-        <div class="col-md">Umbrella Plant</div>
     </div>
     
-    <!-- Responsive Analysis -->
+    <!-- Responsiveness Explanation -->
     <div class="row mt-4">
         <div class="col-12">
-            <div class="alert alert-info">
-                <h5>Responsive Behavior Analysis:</h5>
-                <p><strong>Answer:</strong> The plant names row breaks first.</p>
-                <p><strong>Explanation:</strong> The letters row uses <code>col-sm-2</code> classes, which break at the small breakpoint (576px and below). The plant names row uses <code>col-md</code> classes, which break at the medium breakpoint (768px and below). Since the medium breakpoint (768px) is larger than the small breakpoint (576px), the plant names row will stack vertically first when reducing the browser width, while the letters row will remain horizontal until the screen gets even smaller.</p>
-            </div>
+            <h4>Responsiveness Explanation:</h4>
+            <p>When resizing the browser, the <strong>letters row breaks first</strong>. This happens because the letters use col-sm-2 classes (which stack below 576px), while the plant names use col-md classes (which stack below 768px). Since the sm breakpoint is smaller than the md breakpoint, the letters will stack into a vertical layout first as the screen gets smaller.</p>
         </div>
     </div>
 </div>
